@@ -7,6 +7,7 @@
     font-style: normal;
       
     --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
     --dark-greyish-cyan: hsl(186, 14%, 43%);
     --greyish-cyan: hsl(184, 14%, 56%);
     --light-greyish-cyan: hsl(185, 41%, 84%);
@@ -14,7 +15,70 @@
     --white: hsl(0, 0%, 100%);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    min-height: 50vh;
+    background-color: var(--light-greyish-cyan);
+}
+
+h1 {
+    color: var(--dark-greyish-cyan);
+    text-align: center;
+}
+
+h2 {
+    color: var(--dark-greyish-cyangreyish-cyan);
+    font-size: 1rem;
+}
+
+
+
+main {
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.input-panel, .output-panel {
+    margin: 1em;
+}
+
+/* .bill, .tip, .people, .amount, .total {
+    font-size: 1rem;
+} */
+
+.output-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-cyan);
+    border-radius: 25px;
+}
+
+.amount, .total {
+    line-height: 0.75;
+}
+
+.amount > h2, .total > h2 {
+    color: var(--very-light-greyish-cyan);
+}
+
+.amount > h3, .total > h3 {
+    color: var(--greyish-cyan);
+    font-size: 0.8rem;
+}
+
+.reset-btn {
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
 .attribution { 
+    margin-top: 1em;
     font-size: 0.688rem; 
     text-align: center; 
 }
