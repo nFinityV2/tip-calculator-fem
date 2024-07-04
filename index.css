@@ -34,15 +34,14 @@ h2 {
     font-size: 1rem;
 }
 
-
-
 main {
     background-color: var(--white);
     border-radius: 10px;
 }
 
 .input-panel, .output-panel {
-    margin: 1em;
+    max-width: 85%;
+    margin: auto;
 }
 
 /* .bill, .tip, .people, .amount, .total {
@@ -56,17 +55,34 @@ main {
     border-radius: 25px;
 }
 
-.amount, .total {
+.amount-container {
+    margin: 1em 0.5em 0.25em;
+}
+
+.total-container {
+    margin: 0.25em 0.5em 1em;
+}
+
+.amount-container, .total-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     line-height: 0.75;
+}
+
+.amount-output, .total-output {
+    font-size: 2rem;
+    color: var(--strong-cyan);
 }
 
 .amount > h2, .total > h2 {
     color: var(--very-light-greyish-cyan);
+    font-size: 0.8rem;
 }
 
 .amount > h3, .total > h3 {
     color: var(--greyish-cyan);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .reset-btn {
@@ -74,7 +90,10 @@ main {
     background-color: var(--strong-cyan);
     border-radius: 10px;
     border: none;
+    font-size: 1rem;
     text-transform: uppercase;
+    margin: 0 1em 1em;
+    padding: 0.5em 4em;
 }
 
 .attribution { 
