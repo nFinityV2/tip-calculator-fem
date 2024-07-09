@@ -30,13 +30,29 @@ h1 {
 }
 
 h2 {
-    color: var(--dark-greyish-cyangreyish-cyan);
-    font-size: 1rem;
+    color: var(--dark-greyish-cyan);
+    font-size: 0.9rem;
 }
 
 main {
     background-color: var(--white);
     border-radius: 10px;
+    max-width: 375px;
+    margin: auto;
+}
+
+input {
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--very-light-greyish-cyan);
+    color: var(--very-dark-cyan);
+    text-align: right;
+}
+
+.bill, .people , .tip{
+    margin: auto;
+    padding-bottom: 0.5em;
 }
 
 .input-panel, .output-panel {
@@ -44,15 +60,29 @@ main {
     margin: auto;
 }
 
-/* .bill, .tip, .people, .amount, .total {
-    font-size: 1rem;
-} */
-
 .output-panel {
     display: flex;
     flex-direction: column;
     background-color: var(--very-dark-cyan);
     border-radius: 25px;
+}
+
+.tip-btn-box {
+    display: grid;
+    grid-template-columns:  repeat(2, 150px);
+    gap: 20px;
+}
+
+.tip-btn-box > button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-greyish-cyan);
+}
+
+.tip-btn-box > button:hover{
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
 }
 
 .amount-container {
@@ -71,7 +101,7 @@ main {
 }
 
 .amount-output, .total-output {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--strong-cyan);
 }
 

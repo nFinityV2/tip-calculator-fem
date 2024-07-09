@@ -13,20 +13,22 @@
     <section class="input-panel">
       <div class="bill">
         <h2>Bill</h2>
+        <input type="text" name="bill" id="bill">
       </div>
       <div class="tip">
-        <h2></h2>
-        Select Tip %
-        5%
-        10%
-        15%
-        25%
-        50%
-        Custom
+        <h2>Select Tip %</h2>
+        <div class="tip-btn-box">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+        </div>
       </div>
       <div class="people">
-        <h2></h2>
-        Number of People
+        <h2>Number of People</h2>
+        <input type="number" name="people" id="people">
       </div>
     </section>
     <section class="output-panel">
@@ -36,7 +38,7 @@
           <h3>/ person</h3>
         </div>
         <div class="amount-output">
-          $
+          $50.00
         </div>
       </div>
       <div class="total-container">
@@ -45,7 +47,7 @@
           <h3>/ person</h3>
         </div>
         <div class="total-output">
-          $
+          $100.00
         </div>
       </div>
       <button id="reset" class="reset-btn">Reset</button>
