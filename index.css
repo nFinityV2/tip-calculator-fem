@@ -29,9 +29,9 @@ h1 {
     text-align: center;
 }
 
-h2 {
+label {
     color: var(--dark-greyish-cyan);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 main {
@@ -42,11 +42,12 @@ main {
 }
 
 input {
-    max-width: 100%;
+    max-width: 95%;
     border: none;
     border-radius: 10px;
     background-color: var(--very-light-greyish-cyan);
     color: var(--very-dark-cyan);
+    padding-right: 0.5em;
     text-align: right;
 }
 
@@ -55,8 +56,25 @@ input {
     padding-bottom: 0.5em;
 }
 
+.icon-bill {
+    background-image:  url("images/icon-dollar.svg");
+}
+
+.icon-people {
+    background-image: url("images/icon-person.svg");
+}
+
+.icon-bill, .icon-people {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 20px;
+}
+
 .input-panel, .output-panel {
     max-width: 85%;
+}
+
+.input-panel {
     margin: auto;
 }
 
@@ -65,6 +83,7 @@ input {
     flex-direction: column;
     background-color: var(--very-dark-cyan);
     border-radius: 25px;
+    margin: 1em auto 0.5em;
 }
 
 .tip-btn-box {
@@ -124,6 +143,11 @@ input {
     text-transform: uppercase;
     margin: 0 1em 1em;
     padding: 0.5em 4em;
+}
+
+.error {
+    color:red;
+    font-size: 0.75rem;
 }
 
 .attribution { 
