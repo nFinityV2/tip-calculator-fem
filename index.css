@@ -144,6 +144,7 @@ input:active, input:focus, input:focus-visible {
 
 .reset-btn {
     color: var(--very-dark-cyan);
+    cursor: pointer;
     background-color: var(--strong-cyan);
     border-radius: 10px;
     border: none;

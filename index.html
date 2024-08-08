@@ -11,28 +11,28 @@
   <h1>SPLITTER</h1>
   <main>
     <section class="input-panel">
-      <div class="bill">
-        <label for="bill">Bill</label>
-        <div class="error">Bill</div>
-        <input class="icon-bill" type="text" name="bill" id="bill" placeholder="0">
-      </div>
-      <div class="tip">
-        <label for="custom-tip">Select Tip %</label>
-        <div class="error">Select Tip %</div>
-        <div class="tip-btn-box">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <div class="error">Bill</div>
+          <input class="icon-bill" type="text" name="bill" id="bill" placeholder="0">
         </div>
-      </div>
-      <div class="people">
-        <label for="people">Number of people</label>
-        <div class="error">Number of People</div>
-        <input class="icon-people" type="number" name="people" id="people" placeholder="0">
-      </div>
+        <div class="tip">
+          <label for="custom-tip">Select Tip %</label>
+          <div class="error">Select Tip %</div>
+          <div class="tip-btn-box">
+            <button id="tip-five" data-value="0.05">5%</button>
+            <button id="tip-ten" data-value="0.1">10%</button>
+            <button id="tip-fifteen" data-value="0.15">15%</button>
+            <button id="tip-twenty-five" data-value="0.25">25%</button>
+            <button id="tip-fifty" data-value="0.5">50%</button>
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="people">
+          <label for="people">Number of people</label>
+          <div class="error">Number of People</div>
+          <input class="icon-people" type="text" name="people" id="people" placeholder="0">
+        </div>
     </section>
     <section class="output-panel">
       <div class="amount-container">
@@ -40,8 +40,8 @@
           <h2>Tip Amount</h2>
           <h3>/ person</h3>
         </div>
-        <div class="amount-output">
-          $50.00
+        <div class="amount-output" id="amount-output">
+          
         </div>
       </div>
       <div class="total-container">
@@ -49,8 +49,8 @@
           <h2>Total</h2>
           <h3>/ person</h3>
         </div>
-        <div class="total-output">
-          $100.00
+        <div class="total-output" id="total-output">
+          
         </div>
       </div>
       <button id="reset" class="reset-btn">Reset</button>
@@ -61,5 +61,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Nathan Soh</a>.
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
